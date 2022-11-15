@@ -1,0 +1,221 @@
+/* 
+=============== 
+common
+===============
+ */
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #DDEEFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+p {
+  color: #829AB0;
+}
+
+/*
+=============== 
+ global-style
+===============
+*/
+
+/* color: #ffde59; */
+/* transition: all 0.3s linear; */
+/* color: #7AB398; */
+
+
+/* 
+=============== 
+nav
+===============
+ */
+
+nav {
+  width: 100vw;
+  background-color: white;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%)
+}
+
+.nav-center {
+  height: 3rem;
+  width: 90vw;
+  max-width: 620px;
+  justify-content: space-between;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav-center h1 {
+  color: #7AB398;
+}
+
+
+
+/*
+=============== 
+section
+===============
+*/
+
+section {
+  margin: 5rem auto;
+  width: 90vw;
+  max-width: 1170px;
+}
+
+section .title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title h2 {
+  font-size: 2rem;
+  padding-bottom: 0.7rem;
+}
+
+section .under-line {
+  content: "";
+  width: 100px;
+  height: 4px;
+  background-color: #c59d5f;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+
+/*
+=============== 
+article
+===============
+*/
+
+.gift-img {
+  margin-bottom: 1rem;
+  place-items: center;
+  display: grid;
+}
+
+.gift-img img {
+  width: 100%;
+}
+
+.gift-info h3{
+  font-size: 1.5rem;
+  color: hsl(205, 72%, 37%);
+  text-transform:uppercase;
+  margin-bottom: 0rem;
+  letter-spacing: 1.5px;
+}
+
+.gift-info p{
+  margin: 1.25rem 0;
+}
+
+/*
+=============== 
+deadline
+===============
+*/
+
+.deadline{
+  display: flex;
+}
+
+.deadline h4{
+  font-size: 1.2rem;
+}
+
+.deadline-format{
+  display: grid;
+  color: azure;
+  width: 5rem;
+  height: 5rem;
+  place-items: center;
+  text-align: center;
+  background-color: #102A42;
+  margin-right: 1rem;
+}
+
+.deadline-format:last-child{
+  margin-right: 0;
+}
+
+.deadline-format span{
+  text-transform:uppercase;
+}
+
+.giveway{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 0.9rem;
+  color:#102A42;
+}
+
+.expired{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  color:#102A42;
+}
+
+/*
+=============== 
+
+
+
+
+/*
+=============== 
+PC screen
+===============
+*/
+
+@media screen and (min-width: 920px) {
+
+  body {
+    font-size: 1rem;
+  }
+
+  section {
+    width: 80vw;
+  }
+
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .deadline{
+    justify-content: flex-start;
+  }
+
+  .gift-img {
+    margin-bottom: 0;
+  }
+
+
+}
